@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #004445; /* Dark gray for a professional and readable text */
+    margin: 0;
+    padding: 0;
+    background-color: #faf5e4; /* Very light gray background for a clean look */
+}
+
+h1, h2, h3 {
+    color: #f8b400; /* Soft blue for headers for a modern touch */
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #f8b400; /* Bright blue for links */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #004445, #004445); /* Dark gradient for a modern header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #3498db; /* Bright blue on hover */
+    color: white; /* White text on hover for contrast */
+}
+
+/* Hero Section Styles */
+#home {
+    position: relative;
+    text-align: center;
+}
+
+#home img {
+    width: 100%;
+    max-width: 1600px; /* Increase max-width for a grand display */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 40px; /* More padding for spacious look */
+    max-width: 80%;
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay for better readability */
+    border-radius: 20px; /* More rounded corners for a modern look */
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ecf0f1; /* Light gray text for contrast */
+}
+
+.hero-text p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+.hero-text .button {
+    background: linear-gradient(135deg, #e67e22, #d35400); /* Gradient button for a striking effect */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-text .button:hover {
+    background: linear-gradient(135deg, #d35400, #e67e22); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Section Styles */
+main {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2980b9; /* Modern blue for section headers */
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #7f8c8d; /* Medium gray for text */
+}
+
+/* Image Alignments */
+.image-left {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 48%;
+}
+
+.image-right {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 48%;
+}
+
+/* Clear floats */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Grid Styles */
+.attraction-grid, .cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.attraction-item, .cuisine-item {
+    background-color: white;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction-item:hover, .cuisine-item:hover {
+    transform: translateY(-8px); /* Slight hover effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.attraction-item img, .cuisine-item img {
+    width: 100%;
+    height: auto;
+}
+
+.attraction-item h3, .cuisine-item h3 {
+    font-size: 1.6em;
+    margin: 15px 0;
+    color: #3498db; /* Bright blue for item titles */
+}
+
+.attraction-item p, .cuisine-item p {
+    padding: 0 15px 15px;
+    color: #7f8c8d; /* Medium gray text for descriptions */
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #004445; /* Deep navy blue for contact text */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #004445, #004445); /* Gradient for footer background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #3498db; /* Bright blue on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text {
+        padding: 0 20px; /* Less padding on smaller screens */
+        max-width: 90%; /* More width on smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.3em;
+    }
+
+    .hero-text .button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .image-left, .image-right {
+        width: 100%; /* Full width for images on mobile */
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    .attraction-item, .cuisine-item {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow on mobile */
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 10px 0;
+    }
+}
